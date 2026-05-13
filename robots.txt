@@ -1,0 +1,30 @@
+# Vellora Digital — robots.txt
+# https://velloradigital.com
+
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+
+# Disallow common non-public paths (in case you add them later)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Block AI training crawlers (optional — remove these blocks if you want AI to index your site)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+# Sitemap location
+Sitemap: https://velloradigital.com/sitemap.xml
